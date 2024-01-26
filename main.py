@@ -49,21 +49,3 @@ class SistemaDeRegistro:
         messagebox.showinfo('Sucesso', 'Estudante Deletado com Sucesso!')
 
 sistema_de_registro = SistemaDeRegistro()
-
-#infos
-# student = ('?', '?', '?', '?', '?', '?', '?', '?' )
-
-# sistema_de_registro.register_student(student)
-
-#ver estudantes
-# todos_alunos = sistema_de_registro.view_students()
-
-#procurar aluno
-# aluno = sistema_de_registro.search_students()
-
-#atualizar alunos
-#student = ('?', '?', '?', '?', '?', '?', '?', '?', )
-#atualizar = sistema_de_registro.update_students(student)
-
-# deletar aluno
-# sistema_de_registro.delete_students()
