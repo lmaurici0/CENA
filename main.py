@@ -29,15 +29,12 @@ class SistemaDeRegistro:
     def view_students(self):
         self.c.execute('SELECT * FROM student')
         dados = self.c.fetchall()
-
-        for i in dados:
-            print(f'ID: {i[0]}\n Nome: {i[1]}\n Email: {i[2]}\n Telefone: {i [3]}\n Sexo: {i[4]}\n Endereço: {i[5]}\n Data de Nascimento: {i[6]}\n Curso: {i[7]}\n Imagem: {i[8]}')
+        return dados
         
     def search_students(self, id):
         self.c.execute('SELECT * FROM student WHERE id=?', (id,))
         dados = self.c.fetchone()
-        
-        print(f'ID: {dados[0]}\n Nome: {dados[1]}\n Email: {dados[2]}\n Telefone: {dados [3]}\n Sexo: {dados[4]}\n Endereço: {dados[5]}\n Data de Nascimento: {dados[6]}\n Curso: {dados[7]}\n Imagem: {dados[8]}')
+        return dados
 
     def update_students(self, new_values):
         query = 'UPDATE student SET name=?, email=?, phone=?, gender=?, address=?, bday=?, course=?, picture=? WHERE id=?'
@@ -54,7 +51,8 @@ class SistemaDeRegistro:
 sistema_de_registro = SistemaDeRegistro()
 
 #infos
-# student = ('eric', 'eric@gmail.com', '1234', 'M', 'São Paulo, Guarulhos', '01/02/2008', 'Desenvolvimento de Sistemas (DS)', 'image.png' )
+# student = ('?', '?', '?', '?', '?', '?', '?', '?' )
+
 # sistema_de_registro.register_student(student)
 
 #ver estudantes
@@ -64,8 +62,8 @@ sistema_de_registro = SistemaDeRegistro()
 # aluno = sistema_de_registro.search_students()
 
 #atualizar alunos
-# student = ('eric', 'eric@gmail.com', '4444', 'M', 'São Paulo, Guarulhos', '01/02/2008', 'Desenvolvimento de Sistemas (DS)', 'image.png', 2)
-# atualizar = sistema_de_registro.update_students(student)
+#student = ('?', '?', '?', '?', '?', '?', '?', '?', )
+#atualizar = sistema_de_registro.update_students(student)
 
-#deletar aluno
+# deletar aluno
 # sistema_de_registro.delete_students()
