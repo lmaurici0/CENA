@@ -2,7 +2,7 @@
   <p>O CENA é um sistema de cadastro no qual as escolas poderão cadastrar, atualizar e remover seus estudantes em poucos cliques.</p>
   <p>O CENA é um projeto ainda em desenvolvimento, mas, sem fins lucrativos.</p>
 <h2>Desenvolvimento da Aplicação</h2>
-  <p>Um programa de gerenciamento e cadastro desenvolvido com Python e SQLite para Windows e Linux.</p><br>
+  <p>Um programa de gerenciamento e cadastro desenvolvido com Python e SQLite para Windows e Linux.</p>
 <h2>Pré-requisitos (Desenvolvimento)</h2>
 <nav>
   <ul>
