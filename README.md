@@ -9,7 +9,7 @@
     <li>Python (Versão mínima: 3.11.4)</li>
     <li>SQLite (Preferencial ultima versão)</li>
     <li>Importar a biblioteca "sqlite3" no main.py</li>
-    <li>Baixar e importar as bibliotecas tkinter e pillow. caso não tenha baixe com o comando cmd "pip install tkinter" e "pip install pillow"</li>
+    <li>Baixar e importar as bibliotecas tkinter e pillow. Caso não tenha, baixe com o comando cmd "<b>pip install tkinter</b>" e "<b>pip install pillow</b>"</li>
   </ul>
 </nav>
 <h2>Uso (Desenvolvimento)</h2>
