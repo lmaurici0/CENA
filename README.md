@@ -30,6 +30,5 @@ Se deseja contribuir para o projeto, siga os passos abaixo.
     <li>Faça commit das alterações</li>
     <li>De push em sua branch</li>
     <li>Envie um pull request</li>
-    <li></li>
   </ul>
 </nav>
