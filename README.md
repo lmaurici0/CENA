@@ -21,7 +21,7 @@
   </ul>
 </nav>
 
-<h2>Contribuição<\h2>
+<h2>Contribuição</h2>
 Se deseja contribuir para o projeto, siga os passos abaixo.
 <nav>
   <ul>
