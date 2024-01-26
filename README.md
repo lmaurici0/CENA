@@ -21,7 +21,7 @@
   </ul>
 </nav>
 
-<h2>Contribuição<h2></h2>
+<h2>Contribuição<\h2>
 Se deseja contribuir para o projeto, siga os passos abaixo.
 <nav>
   <ul>
@@ -32,3 +32,5 @@ Se deseja contribuir para o projeto, siga os passos abaixo.
     <li>Envie um pull request</li>
   </ul>
 </nav>
+<hr>
+<p>Este projeto é licenciado pela <a href='LICENSE'>Licença MIT</a></p>
