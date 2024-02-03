@@ -24,17 +24,17 @@ class SistemaDeRegistro:
         self.c.execute('INSERT INTO student (name, email, phone, gender,address, bday, course,picture) VALUES (?,?,?,?,?,?,?,?)', 
                        (students))
         self.conn.commit()
-        messagebox.showinfo('Sucesso', 'Aluno Cadastrado com Sucesso')
+        messagebox.showinfo('Sucesso', 'Estudante Cadastrado com Sucesso')
 
     def view_students(self):
         self.c.execute('SELECT * FROM student')
-        dados = self.c.fetchall()
-        return dados
+        data = self.c.fetchall()
+        return data
         
     def search_students(self, id):
         self.c.execute('SELECT * FROM student WHERE id=?', (id,))
-        dados = self.c.fetchone()
-        return dados
+        data = self.c.fetchone()
+        return data
 
     def update_students(self, new_values):
         query = 'UPDATE student SET name=?, email=?, phone=?, gender=?, address=?, bday=?, course=?, picture=? WHERE id=?'
@@ -49,3 +49,22 @@ class SistemaDeRegistro:
         messagebox.showinfo('Sucesso', 'Estudante Deletado com Sucesso!')
 
 sistema_de_registro = SistemaDeRegistro()
+
+#TESTS
+
+#Cadaster Students
+# student = ('Eric Luis', 'ericluis@gmail.com', '11983085555', 'M', 'Rua tal,200', '01-02-08', 'DS', 'images/eric.png')
+# sistema_de_registro.register_student(student)
+
+#Show Students
+#all_students = sistema_de_registro.view_students()
+
+#Find Student
+#student = sistema_de_registro.search_students(id)
+
+#Update Students
+# student = ('?', '?', '?', '?', '?', '?', '?', '?', ?)
+# update = sistema_de_registro.update_students()
+
+#Delete
+# delete = sistema_de_registro.delete_students(2)
