@@ -17,7 +17,6 @@
   <ul>
     <li>1- Baixe o .zip do repositório</li>
     <li>Após localiza-lo no seu computador, extraia para a pasta de sua preferência</li>
-    <li>Abra o main.py em sua IDE favorita e insira os dados necessários</li>
     <li>Executa o screen.py e pronto, você estára usando meu sistema.</li>
   </ul>
 </nav>
