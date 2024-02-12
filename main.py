@@ -53,18 +53,18 @@ sistema_de_registro = SistemaDeRegistro()
 #TESTS
 
 #Cadaster Students
-# student = ('Eric Luis', 'ericluis@gmail.com', '11983085555', 'M', 'Rua tal,200', '01-02-08', 'DS', 'images/eric.png')
+# student = ('?', '?', '?', '?', '?', '?', '?', '?', ?)
 # sistema_de_registro.register_student(student)
 
 #Show Students
-#all_students = sistema_de_registro.view_students()
+# all_students = sistema_de_registro.view_students()
 
 #Find Student
-#student = sistema_de_registro.search_students(id)
+# student = sistema_de_registro.search_students(id)
 
 #Update Students
 # student = ('?', '?', '?', '?', '?', '?', '?', '?', ?)
-# update = sistema_de_registro.update_students()
+# update = sistema_de_registro.update_students(id)
 
 #Delete
-# delete = sistema_de_registro.delete_students(2)
+# delete = sistema_de_registro.delete_students(id)
