@@ -3,7 +3,7 @@ from tkinter import messagebox
 
 class SistemaDeRegistro:
     def __init__(self):
-        self.conn = sqlite3.connect('students.sql')
+        self.conn = sqlite3.connect('students.db')
         self.c = self.conn.cursor()
         self.create_table()
 
