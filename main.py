@@ -3,19 +3,20 @@ from tkinter import messagebox
 
 class SistemaDeRegistro:
     def __init__(self):
-        self.conn = sqlite3.connect('students.db')
+        self.conn = sqlite3.connect('students.sql')
         self.c = self.conn.cursor()
         self.create_table()
 
     def create_table(self):
-        self.c.execute('''CREATE TABLE IF NOT EXISTS student (
+        self.c.execute('''
+                       CREATE TABLE IF NOT EXISTS student (
                        id       INTEGER PRIMARY KEY AUTOINCREMENT,
-                       name     TEXT NOT NULL,
-                       email    TEXT NOT NULL,
-                       phone    TEXT NOT NULL,
+                       name     VARCHAR(255) NOT NULL,
+                       email    VARCHAR(255) NOT NULL,
+                       phone    CHAR(11) NOT NULL,
                        gender   TEXT NOT NULL,
                        address  TEXT NOT NULL,
-                       bday     TEXT NOT NULL,
+                       bday     DATE NOT NULL,
                        course   TEXT NOT NULL,
                        picture  TEXT NOT NULL
                        )''')
@@ -49,22 +50,3 @@ class SistemaDeRegistro:
         messagebox.showinfo('Sucesso', 'Estudante Deletado com Sucesso!')
 
 sistema_de_registro = SistemaDeRegistro()
-
-#TESTS
-
-#Cadaster Students
-# student = ('?', '?', '?', '?', '?', '?', '?', '?', ?)
-# sistema_de_registro.register_student(student)
-
-#Show Students
-# all_students = sistema_de_registro.view_students()
-
-#Find Student
-# student = sistema_de_registro.search_students(id)
-
-#Update Students
-# student = ('?', '?', '?', '?', '?', '?', '?', '?', ?)
-# update = sistema_de_registro.update_students(id)
-
-#Delete
-# delete = sistema_de_registro.delete_students(id)
