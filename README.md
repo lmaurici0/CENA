@@ -12,7 +12,7 @@
     <li>Baixar e importar as bibliotecas tkinter e pillow. Caso não tenha, baixe com o comando cmd "<b>pip install tkinter</b>" e "<b>pip install pillow</b>"</li>
   </ul>
 </nav>
-<h2>Uso (Desenvolvimento)</h2>
+<h2>Uso</h2>
 <nav>
   <ul>
     <li>1- Baixe o .zip do repositório</li>
