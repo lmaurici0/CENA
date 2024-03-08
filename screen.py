@@ -221,6 +221,15 @@ def find_students():
     l_imagem = Label(frame_details, image=imagem, bg=co1, fg=co0)
     l_imagem.place(x=430, y=10)
 
+def refresh():
+    show_students()
+
+refresh = Image.open('images/refresh.png')
+refresh = refresh.resize((25,25))
+refresh = ImageTk.PhotoImage(refresh)
+refresh_button = Button(buttons_frame, command=refresh, image=refresh ,text=' Atualizar', relief=GROOVE, width=10, compound=LEFT, overrelief=RIDGE, font=('Verdana 11'), bg=co1, fg=co0)
+refresh_button.grid(row=4, column=0, pady=5, padx=10, sticky=NSEW)
+
 l_nome = Label(frame_details, text='Nome *', anchor=NW, font=('Verdana 10'), bg=co1, fg=co0)
 l_nome.place(x=4, y=10)
 e_nome = Entry(frame_details, width=30, justify='left', relief='solid')
